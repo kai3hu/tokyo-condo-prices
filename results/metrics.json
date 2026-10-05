@@ -1,0 +1,102 @@
+{
+  "rows": 125048,
+  "train_rows": 108296,
+  "test_rows_2022": 16752,
+  "regression": {
+    "ridge": {
+      "r2_log": 0.84,
+      "mape_pct": 20.2,
+      "median_ape_pct": 14.5,
+      "mae_man_yen": 774.0
+    },
+    "hist_gbm": {
+      "r2_log": 0.891,
+      "mape_pct": 16.0,
+      "median_ape_pct": 11.7,
+      "mae_man_yen": 617.0
+    }
+  },
+  "classification": {
+    "logistic": {
+      "roc_auc": 0.851,
+      "accuracy": 0.771,
+      "f1": 0.772
+    },
+    "hist_gbm": {
+      "roc_auc": 0.894,
+      "accuracy": 0.812,
+      "f1": 0.812
+    },
+    "base_rate_test": 0.489
+  },
+  "clustering": {
+    "k": 2,
+    "silhouette_by_k": {
+      "2": 0.418,
+      "3": 0.356,
+      "4": 0.381,
+      "5": 0.347,
+      "6": 0.248,
+      "7": 0.281
+    },
+    "n_municipalities": 44,
+    "clusters": [
+      {
+        "cluster": 0,
+        "members": "Adachi, Akishima, Chofu, Edogawa, Fuchu, Hachioji, Higashikurume, Higashimurayama, Higashiyamato, Hino, Inagi, Katsushika, Kodaira, Koganei, Kokubunji, Komae, Kunitachi, Machida, Mitaka, Musashino, Nishitokyo, Ome, Tachikawa, Tama",
+        "ppm2_2022_man": 54.3,
+        "growth_pct": 32.5,
+        "median_age": 21.2,
+        "median_walk_min": 10.5,
+        "median_area": 62.7
+      },
+      {
+        "cluster": 1,
+        "members": "Arakawa, Bunkyo, Chiyoda, Chuo, Itabashi, Kita, Koto, Meguro, Minato, Nakano, Nerima, Ota, Setagaya, Shibuya, Shinagawa, Shinjuku, Suginami, Sumida, Taito, Toshima",
+        "ppm2_2022_man": 105.5,
+        "growth_pct": 33.6,
+        "median_age": 15.2,
+        "median_walk_min": 6.0,
+        "median_area": 39.0
+      }
+    ],
+    "clusters_k4": [
+      {
+        "cluster_k4": 0,
+        "members": "Adachi, Akishima, Chofu, Edogawa, Fuchu, Hachioji, Higashiyamato, Hino, Inagi, Katsushika, Kodaira, Koganei, Kokubunji, Kunitachi, Machida, Mitaka, Musashino, Nishitokyo, Tachikawa",
+        "ppm2_2022_man": 58.2,
+        "growth_pct": 34.9,
+        "median_age": 19.6,
+        "median_walk_min": 9.9,
+        "median_area": 62.9
+      },
+      {
+        "cluster_k4": 1,
+        "members": "Arakawa, Bunkyo, Chiyoda, Chuo, Itabashi, Kita, Koto, Meguro, Minato, Nakano, Nerima, Ota, Setagaya, Shibuya, Shinagawa, Shinjuku, Suginami, Sumida, Taito, Toshima",
+        "ppm2_2022_man": 105.5,
+        "growth_pct": 33.6,
+        "median_age": 15.2,
+        "median_walk_min": 6.0,
+        "median_area": 39.0
+      },
+      {
+        "cluster_k4": 2,
+        "members": "Higashikurume",
+        "ppm2_2022_man": 37.2,
+        "growth_pct": 49.1,
+        "median_age": 28.0,
+        "median_walk_min": 25.0,
+        "median_area": 65.0
+      },
+      {
+        "cluster_k4": 3,
+        "members": "Higashimurayama, Komae, Ome, Tama",
+        "ppm2_2022_man": 40.0,
+        "growth_pct": 16.8,
+        "median_age": 27.0,
+        "median_walk_min": 9.5,
+        "median_area": 61.2
+      }
+    ]
+  }
+}
